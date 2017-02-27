@@ -1,0 +1,7 @@
+{
+  "name": "conf",
+  "version": "1.0.0",
+  "description": "gulp & webpack config",
+  "main": "index.js",
+  "license": "MIT"
+}
