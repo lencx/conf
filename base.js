@@ -9,15 +9,30 @@
  **************************************************************/
 /**
  * Random Hsla
+ * @param {Object} {s: 0-100, l: 0-100, alpha: 0-1}
+ * // s => saturation, l => lightness, a => alpha
+ * @return {String} Defaults: hsla(random, 80, 60, 1)
+ * @example
+ * // randomHsla() => hsla(random, 80, 60, 1)
+ * // randomHsla({l: 70, a: .3}) => hsla(random, 80, 70, .3)
+ * // randomHsla({a: .5}) => hsla(random, 80, 60, .5)
+ */
+function randomHsla({s=80, l=60, a=1}) {
+    // return 'hsla('+Math.ceil(Math.random()*360)+', '+s+'%, '+l+'%,'+a+')'
+    return `hsla(${Math.ceil(Math.random()*360)}, ${s}%, ${l}%, ${a})`
+}
+
+/**
+ * Random Hsla2
  * @param {Number} saturation => 0 - 100
  * @param {Number} lightness => 0 - 100
  * @param {Number} alpha => 0 - 1
  * @return {String} Defaults: hsla(random, 80, 60, 1)
  * @example
- * // randomHsla() => hsla(random, 80, 60, 1)
- * // randomHsla(60, 70, .5) => hsla(random, 60, 70, .5)
+ * // randomHsla2() => hsla(random, 80, 60, 1)
+ * // randomHsla2(60, 70, .5) => hsla(random, 60, 70, .5)
  */
-function randomHsla (s=80, l=60, a=1) {
+function randomHsla2 (s=80, l=60, a=1) {
     // return 'hsla('+Math.ceil(Math.random()*360)+', '+s+'%, '+l+'%,'+a+')'
     return `hsla(${Math.ceil(Math.random()*360)}, ${s}%, ${l}%, ${a})`
 }
@@ -67,7 +82,7 @@ function arrCount(arr) {
     }
     unique2(arr).some(item => {
         let n = 0
-        arr.forEach(i => {
+        arr.some(i => {
             if(item === i) n++
         })
         countArr.add({item, n})
