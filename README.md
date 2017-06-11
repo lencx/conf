@@ -1,6 +1,6 @@
 # Conf
 
 * gulp
-* mac.setings
-* vscode
-* webpack
+* mac
+* vscode.setings
+* webpack (mulitpage)

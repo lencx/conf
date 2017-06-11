@@ -46,7 +46,6 @@ function logError(error) {
     this.emit('end')
 }
 
-
 // srever
 gulp.task('nodemon', (cb) => {
     let called = false
@@ -78,7 +77,7 @@ gulp.task('sass', () => {
             $.rucksack,
             // postcss-cssnext
             $.cssnext({browsers: ['last 2 version']})
-
+            
             // ...
         ],
         // nested | expanded | compact | compressed
@@ -127,7 +126,6 @@ gulp.task('watch', () => {
 })
 
 gulp.task('default', ['sass', 'js-min', 'img-min', 'watch', 'browser-sync'])
-
 
 
 /************************************************************************************/
