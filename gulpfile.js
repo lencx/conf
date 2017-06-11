@@ -127,3 +127,33 @@ gulp.task('watch', () => {
 })
 
 gulp.task('default', ['sass', 'js-min', 'img-min', 'watch', 'browser-sync'])
+
+
+
+/************************************************************************************/
+
+let uglify = require('gulp-uglify')
+let babel = require('gulp-babel')
+let cleanCss = require('gulp-clean-css')
+let replace = require('gulp-replace')
+
+gulp.task('min-css', () => {
+    return pump([
+        gulp.src('./css/*.css'),
+        cleanCss(),
+        replace(/img\//g, '../img/'),
+        gulp.dest('dist')
+    ])
+})
+gulp.task('es6-5', () => {
+    return pump([
+        gulp.src('./js/main.js'),
+        babel({
+            presets: ['es2015']
+        }),
+        uglify(),
+        gulp.dest('dist')
+    ])
+
+})
+gulp.task('default', ['min-css', 'min-js'])
