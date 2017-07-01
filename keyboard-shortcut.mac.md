@@ -14,7 +14,7 @@
 |:---:|:---|
 |⌘T|New Tab|
 |⌘N|New Window|
-|⇧⌘J|Downloads|
+|⇧⌘J|Downloads|
 |⌘Y|History|
 |⌥⌘I / ⌥⌘J|Developer Tools|
 |⇧⌘⌫|Clear Browsing Data|
