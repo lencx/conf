@@ -28,3 +28,21 @@ $(which bash)
 du
 # du -hs *
 # du -shc *
+
+# display and update sorted information about processes
+top
+
+# line numbering filter
+nl
+
+# concatenate and print files
+cat
+
+# word, line, character, and byte count
+wc
+
+# displays a calendar and the date of easter
+cal
+
+# change file access and modification times
+touch
