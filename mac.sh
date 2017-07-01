@@ -23,3 +23,8 @@ echo $SHELL
 # Switching shell
 chsh -s /bin/zsh
 $(which bash)
+
+# display disk usage statistics
+du
+# du -hs *
+# du -shc *

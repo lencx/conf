@@ -127,8 +127,7 @@ gulp.task('watch', () => {
 
 gulp.task('default', ['sass', 'js-min', 'img-min', 'watch', 'browser-sync'])
 
-
-/************************************************************************************/
+/**********************************************************/
 
 let uglify = require('gulp-uglify')
 let babel = require('gulp-babel')
@@ -147,7 +146,7 @@ gulp.task('es6-5', () => {
     return pump([
         gulp.src('./js/main.js'),
         babel({
-            presets: ['es2015']
+            presets: ['env']
         }),
         uglify(),
         gulp.dest('dist')
@@ -155,3 +154,14 @@ gulp.task('es6-5', () => {
 
 })
 gulp.task('default', ['min-css', 'min-js'])
+
+/**********************************************************/
+// move file
+gulp.task('move:html', () => {
+    return pump([
+        gulp.src('dist/@(index|about|other\-page).html', {
+            base: 'dist'
+        }),
+        gulp.dest('otherPath')
+    ])
+})

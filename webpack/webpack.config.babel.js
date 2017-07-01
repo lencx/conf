@@ -8,34 +8,46 @@ const ExtractPlugin = new ExtractTextPlugin({
     allChunks: true
 })
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const env = require('./env.conf')
-const entryConf = require('./entry.conf')
+import {host, port, publicPath} from './env.conf'
+import {entryJs, entryPug} from './entry.conf'
 
 function resolve(dir) {
     return path.resolve(__dirname, dir)
 }
 
 const webpackConf = {
-    entry: entryConf.entryJs,
+    entry: entryJs,
     output: {
         path: resolve('dist'),
         filename: 'js/[name].[hash:12].js',
-        publicPath: env.publicPath
+        publicPath: publicPath
     },
     resolve: {
         extensions: ['.js', '.scss', '.json'],
         alias: {
             '@': resolve('src'),
-            '@sass': resolve('src/sass')
+            '@sass': resolve('src/sass'),
+            '@img': resolve('src/img')
         }
     },
     // devtool: env.isProd ? '' : 'source-map',
     devServer: {
         // contentBase: resolve('src'),
-        port: env.port,
-        host: env.host,
+        port: port,
+        host: host,
         // host: 'localhost',
         // hot: true
+        proxy: {
+            'api/*': {
+                // backend server
+                // example
+                target: 'https://other-server.example.com',
+                secure: false
+            },
+            'other/*': {
+                // code ...
+            }
+        }
     },
     module: {
         rules: [
@@ -98,11 +110,10 @@ const webpackConf = {
     ]
 }
 
-let pages = entryConf.entryPug
-for(let page in pages) {
+for(let page in entryPug) {
     let conf = {
         filename: page.split('/')[1]+'.html',
-        template: pages[page],
+        template: entryPug[page],
         inject: true,
         chunks: [page, 'common'],
         minify: {
