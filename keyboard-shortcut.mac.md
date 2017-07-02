@@ -7,6 +7,7 @@
 |⌘,|Setting|
 |⌘Q|Quit|
 |⌘Space|Spotlight Search|
+|fn⌘|Siri|
 
 ## Chrome
 
@@ -29,7 +30,6 @@
 |:---:|:---|
 |⌘I|Get Info|
 |⇧⌘N|New Folder|
-|fn⌘|Siri|
 
 > Terminal
 

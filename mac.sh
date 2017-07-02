@@ -46,3 +46,12 @@ cal
 
 # change file access and modification times
 touch
+
+#  display the last part of a file
+tail
+
+# transfer a URL
+curl
+
+# manipulate tape archives
+tar
