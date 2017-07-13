@@ -2,6 +2,8 @@
 
 ## Step 1
 
+[Download MongoDB](https://www.mongodb.com/download-center#community)
+
 ```bash
 # ~/.zshrc or ~/.bashrc
 export PATH=<mongodb-install-directory>/bin:$PATH
@@ -38,4 +40,12 @@ vi mongod.conf
 mongod --config conf/mongod.conf
 # connect
 mongo 127.0.0.1:11223/test
+```
+
+## 
+
+```bash
+show dbs
+
+use 
 ```
