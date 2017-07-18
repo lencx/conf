@@ -8,7 +8,8 @@
 
 ## dev-conf
 
-* webpack (mulitpage)
+* [webpack (mulitpage)](./dev-conf/webpack)
 * [gulpfile](./dev-conf/gulpfile.js)
 * [mongodb](./dev-conf/mongodb.md)
-* [vscode.setings](./dev-conf/vscode.srtings.json)
+* [vscode.setings](./dev-conf/vscode.setings.json)
+* [vscode plugins](./dev-conf/vscode-plugins.md)
