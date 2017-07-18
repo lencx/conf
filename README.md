@@ -1,9 +1,14 @@
 # Conf
 
-* gulp
-* [mac](mac.sh)
-* vscode.setings
+## system
+
+* [mac terminal](./mac.sh)
+* [zshrc](./.zshrc)
+* [keyboard shortcut for Mac](./keyboard-shortcut.mac.md)
+
+## dev-conf
+
 * webpack (mulitpage)
-* [Keyboard Shortcut](keyboard-shortcut.mac.md)
-* [mongoDB for Mac](mongodb.md)
-* [Golang base](go.md)
+* [gulpfile](./dev-conf/gulpfile.js)
+* [mongodb](./dev-conf/mongodb.md)
+* [vscode.setings](./dev-conf/vscode.srtings.json)

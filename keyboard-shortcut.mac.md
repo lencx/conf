@@ -1,5 +1,11 @@
 # Keyboard shortcut
 
+>>
+⌘ : command \
+⌥ : option \
+⇧ : shift \
+⌃ : control
+
 ## Common
 
 | keyboard shortcut | description |
@@ -22,12 +28,10 @@
 |⇧⌘3|Save ScreenShot|
 |⇧⌘4|Save ScreenShot (selection)|
 |⇧⌘⌫|Clear Browsing Data|
-|⇧⌘C|Select an element in the page to inspect it|
+|⇧⌘C|Select an element in the page to inspect it(dev)|
+|⌥⌘I / ⌥⌘J|Developer Tools(dev)|
 |⇧⌘J|Downloads|
-|⇧⌘J|Downloads|
-|⇧⌘M|Toggle device toolbar|
 |⇧⌘R|Force Reload This Page|
-|⌥⌘I / ⌥⌘J|Developer Tools|
 |⌥⌘→|Select Next Tab|
 |⌥⌘←|Select Previous Tab|
 
@@ -47,3 +51,19 @@
 |⌘T|New Tab|
 |⇧⌘→|Show Next Tab|
 |⇧⌘←|Show Prev Tab|
+
+## [Visual Studio Code for Mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+
+> basic editing
+
+| keyboard shortcut | description |
+|:---:|:---|
+|⌃`|Show integrated terminal|
+|⇧⌥F|Format document|
+|⇧⌘K|Delete line|
+|⌥↓ / ⌥↑|Move line down/up|
+|⌥⇧↓ / ⌥⇧↑|Copy line down/up|
+|⌘Enter / ⇧⌘Enter|Insert line below/above|
+|⌘N|New file|
+|⌘O|Open file|
+|⌘W|Close|
