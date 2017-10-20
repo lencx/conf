@@ -13,3 +13,4 @@
 * [mongodb](./dev-conf/mongodb.md)
 * [vscode.setings](./dev-conf/vscode.setings.json)
 * [vscode plugins](./dev-conf/vscode-plugins.md)
+* [git command](./git.md)
