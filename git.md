@@ -1,4 +1,4 @@
-# Git
+# [Git](https://git-scm.com/)
 
 ## Command
 
@@ -18,7 +18,7 @@ git status
 git diff
 git merge
 
-git reset --hard <sha1>
+git reset --hard [sha1]
 ```
 
 ### Branch
@@ -62,4 +62,25 @@ git push origin :refs/tags/<tagname>
       last = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -1 HEAD
 [core]
       editor = emacs
+```
+
+## ssh
+
+```bash
+## authentication key generation, management and conversion
+ssh-keygen -t rsa -C "email@example.com"
+```
+
+## [GitHub](https://github.com/)
+
+* SSH key
+> Settings > SSH and GPG keys > New SSH key > ~/.ssh id_rsa.pub
+
+```bash
+# git clone [url]
+git init
+git add -A
+git commit -m "first commit"
+git remote add origin git@github.com:username/repo.git
+git push -u origin master
 ```

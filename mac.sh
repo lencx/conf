@@ -30,14 +30,8 @@ du
 # du -hs *
 # du -shc *
 
-# display and update sorted information about processes
-top
-
 # line numbering filter
 nl
-
-# concatenate and print files
-cat
 
 # word, line, character, and byte count
 wc
@@ -56,3 +50,54 @@ curl
 
 # manipulate tape archives
 tar
+
+## Create directory
+## example:
+# mkdir test
+mkdir <file name>
+
+## Change current directory
+## ..: `up directory`
+## example:
+# cd test
+# cd ..
+cd [file path]
+
+## Move files/directory
+mv source target
+
+## Copy files/directory
+cp -R source_file target_file
+
+
+## list directory contents
+ls
+
+## change file access and modification times
+touch [file]
+## write arguments to the standard output
+echo
+## concatenate and print files
+cat
+
+## process
+## display and update sorted information about processes
+top
+## terminate or signal a process
+kill [pid]
+
+## clear the terminal screen
+clear
+## ~/.zshrc alias
+cls
+
+## ~/.zshrc alias
+del [file]
+
+## word, line, character, and byte count
+wc [file]
+
+date
+time
+## displays a calendar and the date of Easter
+cal

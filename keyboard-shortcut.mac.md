@@ -52,7 +52,11 @@
 |⇧⌘→|Show Next Tab|
 |⇧⌘←|Show Prev Tab|
 
-## [Visual Studio Code for Mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+## Visual Studio Code for Mac
+
+* [macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+
+* [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
 
 > basic editing
 
