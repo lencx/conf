@@ -18,7 +18,10 @@ git status
 git diff
 git merge
 
-git reset --hard [sha1]
+git reset --hard [hash]
+
+git reflog
+git commit --amend
 ```
 
 ### Branch
