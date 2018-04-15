@@ -101,3 +101,6 @@ date
 time
 ## displays a calendar and the date of Easter
 cal
+
+# process status
+ps -A|grep <name>

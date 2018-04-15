@@ -4,6 +4,7 @@
 
 * [mac terminal](./mac.sh)
 * [zshrc](./.zshrc)
+* [z.sh](https://github.com/rupa/z)
 * [keyboard shortcut for Mac](./keyboard-shortcut.mac.md)
 
 ## dev-conf
