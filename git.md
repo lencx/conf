@@ -87,3 +87,27 @@ git commit -m "first commit"
 git remote add origin git@github.com:username/repo.git
 git push -u origin master
 ```
+
+---
+
+<!-- https://stackoverflow.com/questions/179123/how-to-modify-existing-unpushed-commits -->
+
+```bash
+# X is the number of commits to the last commit you want to be able to edit
+git rebase -i HEAD~X
+
+##### vim
+# pick <hash> <msg>
+# pick => e
+e <hash> <msg>
+#####
+
+git commit --amend
+
+##### vim
+# old msg
+new msg
+#####
+
+git rebase --continue
+```
