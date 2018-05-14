@@ -111,3 +111,37 @@ new msg
 
 git rebase --continue
 ```
+
+## Multi-user Config
+
+```bash
+# id_rsa_1 & id_rsa_1.pub
+ssh-keygen -t rsa -C "your_email_1@example.com"
+
+# id_rsa_2 & id_rsa_2.pub
+ssh-keygen -t rsa -C "your_email_2@example.com"
+
+#######################################
+# vim ~/.ssh/config
+
+Host github
+    HostName github.com
+    User yourName
+    IdentityFile ~/.ssh/id_rsa_1
+
+Host github2
+    # other host
+    # HostName gitee.com
+    HostName github.com
+    User yourName2
+    IdentityFile ~/.ssh/id_rsa_2
+
+#######################################
+
+# project root path
+cd ~/project/test
+
+git config user.name "your_name";git config user.email "your_email@example.com"
+
+# alias git2="git config user.name \"your_name\";git config user.email \"your_email@example.com\""
+```
