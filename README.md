@@ -6,6 +6,7 @@
 * [zshrc](./.zshrc)
 * [z.sh](https://github.com/rupa/z)
 * [keyboard shortcut for Mac](./keyboard-shortcut.mac.md)
+* [search on terminal](./search_terminal.sh)
 
 ## dev-conf
 
