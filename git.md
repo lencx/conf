@@ -22,6 +22,10 @@ git reset --hard [hash]
 
 git reflog
 git commit --amend
+
+git branch -r
+git branch -r -d origin/branch-name
+git push origin :branch-name
 ```
 
 ### Branch
