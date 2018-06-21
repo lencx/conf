@@ -26,6 +26,18 @@ git commit --amend
 git branch -r
 git branch -r -d origin/branch-name
 git push origin :branch-name
+
+### update fork ###
+# step1
+git clone git@github.com:YOUR-USERNAME/YOUR-FORKED-REPO.git
+
+# step2
+cd fork-repo
+git remote add upstream git://github.com/ORIGINAL-DEV-USERNAME/REPO-YOU-FORKED-FROM.git
+git fetch upstream
+
+# step3
+git pull upstream master
 ```
 
 ### Branch
