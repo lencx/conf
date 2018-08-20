@@ -1,3 +1,8 @@
+# Mac Command
+
+## Common Command
+
+```bash
 # 评估禁用
 sudo spctl --master-disable
 
@@ -14,7 +19,7 @@ sudo spctl --master-enable
 pwd
 
 # format and display the on-line manual pages
-man 
+man
 
 # List all Mac shells
 ls /bin/*sh
@@ -104,3 +109,38 @@ cal
 
 # process status
 ps -A|grep <name>
+```
+
+## [Set locale terminal setting on Mac OS X](http://webplay.pro/linux/set-locale-terminal-settings-mac-os-x.html)
+
+```bash
+# run
+locale
+
+# output
+LANG=
+LC_COLLATE="C"
+LC_CTYPE="UTF-8"
+LC_MESSAGES="C"
+LC_MONETARY="C"
+LC_NUMERIC="C"
+LC_TIME="C"
+LC_ALL=
+
+######
+# vi ~/.zshrc
+export LC_ALL=en_US.UTF-8
+
+# run
+locale
+
+# output
+LANG="en_US.UTF-8"
+LC_COLLATE="en_US.UTF-8"
+LC_CTYPE="en_US.UTF-8"
+LC_MESSAGES="en_US.UTF-8"
+LC_MONETARY="en_US.UTF-8"
+LC_NUMERIC="en_US.UTF-8"
+LC_TIME="en_US.UTF-8"
+LC_ALL="en_US.UTF-8"
+```

@@ -2,7 +2,7 @@
 
 ## system
 
-* [mac terminal](./mac.sh)
+* [mac terminal](./mac.md)
 * [zshrc](./.zshrc)
 * [z.sh](https://github.com/rupa/z)
 * [keyboard shortcut for Mac](./keyboard-shortcut.mac.md)
