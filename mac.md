@@ -131,6 +131,8 @@ LC_ALL=
 # vi ~/.zshrc
 export LC_ALL=en_US.UTF-8
 
+source ~/.zshrc
+
 # run
 locale
 
@@ -143,4 +145,13 @@ LC_MONETARY="en_US.UTF-8"
 LC_NUMERIC="en_US.UTF-8"
 LC_TIME="en_US.UTF-8"
 LC_ALL="en_US.UTF-8"
+```
+
+---
+
+> System Preferences > Security & Privacy > General
+
+```bash
+sudo spctl --master-disable
+sudo spctl --master-enable
 ```
